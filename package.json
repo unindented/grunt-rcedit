@@ -1,0 +1,41 @@
+{
+  "name":        "grunt-rcedit",
+  "description": "Edit resources of EXE files.",
+  "version":     "0.0.1",
+
+  "author": {
+    "name":  "Daniel Perez Alvarez",
+    "email": "unindented@gmail.com",
+    "url":   "http://unindented.org/"
+  },
+
+  "repository": {
+    "type": "git",
+    "url":  "git://github.com/unindented/grunt-rcedit.git"
+  },
+
+  "keywords": [
+    "gruntplugin"
+  ],
+
+  "scripts": {
+    "test": "grunt test"
+  },
+
+  "dependencies": {
+    "async":  "~0.9.0",
+    "chalk":  "~0.5.1",
+    "rcedit": "~0.3.0"
+  },
+
+  "devDependencies": {
+    "grunt":                  "~0.4.0",
+    "grunt-contrib-clean":    "~0.6.0",
+    "grunt-contrib-jshint":   "~0.10.0",
+    "grunt-contrib-nodeunit": "~0.4.1"
+  },
+
+  "peerDependencies": {
+    "grunt": "~0.4.0"
+  }
+}
