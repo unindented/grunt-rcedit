@@ -28,7 +28,7 @@ module.exports = function (grunt) {
         return done(new Error(err));
       }
 
-      grunt.log.writeln('Edited ' +
+      grunt.log.ok('Edited ' +
         chalk.cyan(results.length.toString()) + (results.length === 1 ? ' file' : ' files'));
 
       done();
