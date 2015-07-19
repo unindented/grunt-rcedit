@@ -2,6 +2,7 @@
   "name":        "grunt-rcedit",
   "description": "Edit resources of EXE files.",
   "version":     "0.3.2",
+  "license":     "MIT",
 
   "author": {
     "name":  "Daniel Perez Alvarez",
