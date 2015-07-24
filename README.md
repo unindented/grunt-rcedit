@@ -28,19 +28,16 @@ _Run this task with the `grunt rcedit` command._
 
 Task targets, files and options may be specified according to the grunt [Configuring tasks](http://gruntjs.com/configuring-tasks) guide.
 
+
 ### Options
 
-#### icon
-Type: `String`
+| Option            | Type      | Description |
+| ------------------| --------- | ----------- |
+| `icon`            | `String`  | Path to the application icon. |
+| `file-version`    | `String`  | Version number for the file. |
+| `product-version` | `String`  | Version number for the product with which the file is distributed. |
+| `version-string`  | `Object`  | Key-value object containing the Version Information to replace in the `.exe` file. To get all the possible keys, you can check out the [table below](#version-information) or open the `.exe` with a resource editor program like [ResEdit](http://www.resedit.net). |
 
-#### file-version
-Type: `String`
-
-#### product-version
-Type: `String`
-
-#### version-string
-Type: `Object`
 
 ### Usage
 
@@ -57,6 +54,8 @@ rcedit: {
       'file-version': '0.0.1',
       'product-version': '0.0.2',
       'version-string': {
+        'ProductName': 'Foobar',
+        'FileDescription': 'Foobar',
         'CompanyName': 'Foobar Inc.',
         'LegalCopyright': 'Copyright 2015 Foobar Inc.'
       }
@@ -66,6 +65,24 @@ rcedit: {
 ```
 
 This task supports all the file mapping format Grunt supports. Please read [Globbing patterns](http://gruntjs.com/configuring-tasks#globbing-patterns) and [Building the files object dynamically](http://gruntjs.com/configuring-tasks#building-the-files-object-dynamically) for additional details.
+
+
+### Version Information
+
+The `version-string` supports the following properties (extracted from the [MSDN](https://msdn.microsoft.com/en-us/library/windows/desktop/aa381058(v=vs.85).aspx)):
+
+| Property              | Description |
+| --------------------- | ----------- |
+| `Comments`            | Additional information that should be displayed for diagnostic purposes. |
+| `CompanyName`         | Company that produced the file, for example "Microsoft Corporation" or "Standard Microsystems Corporation, Inc.". |
+| `FileDescription`     | File description to be presented to users. This string may be displayed in a list box when the user is choosing files to install, for example, "Keyboard Driver for AT-Style Keyboards". |
+| `FileVersion`         | Version number of the file, for example, "3.10" or "5.00.RC2". |
+| `InternalName`        | Internal name of the file, if one exists, for example, a module name if the file is a dynamic-link library. If the file has no internal name, this string should be the original filename, without extension. |
+| `LegalCopyright`      | Copyright notices that apply to the file. This should include the full text of all notices, legal symbols, copyright dates, and so on. |
+| `LegalTrademarks`     | Trademarks and registered trademarks that apply to the file. This should include the full text of all notices, legal symbols, trademark numbers, and so on. |
+| `OriginalFilename`    | Original name of the file, not including a path. This information enables an application to determine whether a file has been renamed by a user. The format of the name depends on the file system for which the file was created. |
+| `ProductName`         | Name of the product with which the file is distributed. This string is required. |
+| `ProductVersion`      | Version of the product with which the file is distributed, for example, "3.10" or "5.00.RC2". |
 
 
 ## Meta
