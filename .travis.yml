@@ -3,8 +3,10 @@ node_js:
   - '4.2'
   - '0.12'
 
+addons:
+  apt:
+    packages:
+      - wine
+
 before_install:
-  - sudo add-apt-repository -y ppa:ubuntu-wine/ppa
-  - sudo apt-get update
-  - sudo apt-get -y install wine1.7
   - npm install -g grunt-cli
