@@ -1,4 +1,4 @@
-# grunt-rcedit [![Version](https://img.shields.io/npm/v/grunt-rcedit.svg)](https://www.npmjs.com/package/grunt-rcedit) [![Build Status](https://img.shields.io/travis/unindented/grunt-rcedit.svg)](http://travis-ci.org/unindented/grunt-rcedit) [![Dependency Status](https://img.shields.io/gemnasium/unindented/grunt-rcedit.svg)](https://gemnasium.com/unindented/grunt-rcedit)
+# grunt-rcedit [![Version](https://img.shields.io/npm/v/grunt-rcedit.svg)](https://www.npmjs.com/package/grunt-rcedit) [![Build Status](https://img.shields.io/travis/unindented/grunt-rcedit.svg)](http://travis-ci.org/unindented/grunt-rcedit) [![Build Status](https://img.shields.io/appveyor/ci/unindented/grunt-rcedit.svg)](https://ci.appveyor.com/project/unindented/grunt-rcedit) [![Dependency Status](https://img.shields.io/gemnasium/unindented/grunt-rcedit.svg)](https://gemnasium.com/unindented/grunt-rcedit)
 
 > Edit resources of EXE files.
 
