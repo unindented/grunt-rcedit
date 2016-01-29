@@ -19,9 +19,9 @@
     "test": "grunt test"
   },
   "dependencies": {
-    "async": "^1.2.1",
-    "chalk": "^1.0.0",
-    "rcedit": "^0.3.0"
+    "async": "^1.5.2",
+    "chalk": "^1.1.1",
+    "rcedit": "^0.4.0"
   },
   "devDependencies": {
     "grunt": "^0.4.0",
