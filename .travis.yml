@@ -8,5 +8,13 @@ addons:
     packages:
       - wine
 
+deploy:
+  provider: npm
+  email: unindented@gmail.com
+  api_key:
+    secure: ahAT2oY3F4D5Rsva2B2aG7S5RR19USxrb8gpt+peApk17S+gKBYd2YdUzeY5SUsNEQ3HZtJqyJaNErL3YzjgQ2Bn9BXwW2rNlB8Ck+BFFJeTFYtP7VgOwNwwwFTO8sXFG/zE5ZRtJgu/osl/Nd/zR8wEBJ+prTgmvRjpm6sb3Ac=
+  on:
+    tags: true
+
 before_install:
   - npm install -g grunt-cli
